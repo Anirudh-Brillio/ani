@@ -11,6 +11,9 @@ jobs:
           name: Install npm packages
           command: npm install
       - run:
-          name : Installing express
+          name: Installing express
           command: npm install express
+      - run:
+          name: Running server
+          command: node index.js 
         
