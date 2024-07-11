@@ -1,9 +1,20 @@
 version: 2.1
+
 jobs:
   build:
     docker:
-      - image: cimg/base:stable
+      - image: cimg/node:14.17  # Use a Node.js image for running npm commands
     steps:
+      - checkout  # Check out the code from the repository
+      
       - run:
-          name: The First Step
+          name: Install npm packages
           command: npm install
+          
+      - run:
+          name: Run tests
+          command: npm test  # This is a common step to run tests
+          
+      - run:
+          name: Build the application
+          command: npm run build  # Assuming there's a build script in package.json
