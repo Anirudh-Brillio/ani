@@ -15,5 +15,5 @@ jobs:
           command: npm install express
       - run:
           name: Running server
-          command: node index.js 
+          command: node ./index.js 
         
