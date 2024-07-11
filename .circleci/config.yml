@@ -1,6 +1,8 @@
 version: 2.1
 jobs:
   build:
+    docker:
+      - image: cimg/base:stable
     steps:
       - run:
           name: The First Step
