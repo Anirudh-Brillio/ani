@@ -10,4 +10,7 @@ jobs:
       - run:
           name: Install npm packages
           command: npm install
+      - run:
+          name : Installing express
+          command: npm install express
         
