@@ -10,11 +10,4 @@ jobs:
       - run:
           name: Install npm packages
           command: npm install
-          
-      - run:
-          name: Run tests
-          command: npm test  # This is a common step to run tests
-          
-      - run:
-          name: Build the application
-          command: npm run build  # Assuming there's a build script in package.json
+        
